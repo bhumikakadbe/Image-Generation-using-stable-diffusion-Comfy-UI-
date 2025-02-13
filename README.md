@@ -4,7 +4,7 @@
 This repository integrates Stable Diffusion with Comfy-UI to provide an intuitive interface for generating high-quality images from text prompts.
 
 ---
-# Introduction
+# Introduction 
 
 This project focuses on AI-powered **image generation using Stable Diffusion integrated with ComfyUI,** a user-friendly node-based workflow. The goal is to make AI-driven **image creation accessible, customizable, and efficient for users.**
 With this implementation, users can generate **high-quality images, adjust parameters, and fine-tune outputs** without requiring advanced technical expertise.
@@ -14,8 +14,10 @@ With this implementation, users can generate **high-quality images, adjust param
 ## Table of Contents
 
 * Features
+* Installation
 * Usage
 * Repository Structure
+* overview
 * License
 * References
 * Acknowledgement
@@ -35,6 +37,49 @@ With this implementation, users can generate **high-quality images, adjust param
 ✔ **Optimized for Different Hardware**– Compatible with both CPU and GPU-based processing.
 
 ---
+
+## Installation & Usage
+
+### 1. Download & Install ComfyUI
+
+1. Open a browser and go to the ComfyUI GitHub repository.
+
+
+2. Scroll down and download the Windows version.
+
+
+3. Extract the downloaded files.
+
+
+
+### 2. Install the Stable Diffusion Model
+
+1. Visit Hugging Face Models.
+
+
+2. Search for v1-5-pruned-emaonly-fp16.safetensors.
+
+
+3. Download the model and place it in:
+
+comfyui_windows > ComfyUI > models > checkpoints
+
+
+
+### 3. Run ComfyUI
+
+1. Open the ComfyUI folder.
+
+
+2. Run the run_cpu.bat or run_gpu.bat file based on your system.
+
+
+3. Open the browser and start generating images by adding prompts!
+
+
+
+
+---
 # Usage
 
 1. Launch ComfyUI and load the Stable Diffusion model.
@@ -46,18 +91,20 @@ With this implementation, users can generate **high-quality images, adjust param
 ---
 # Repository Structure
 
-📂 Image-Generation-Stable-Diffusion  
-│── 📂 models/                 # Pre-trained Stable Diffusion models  
-│── 📂 outputs/                # Generated images and results  
-│── 📂 configs/                # Configuration files for ComfyUI  
-│── 📂 scripts/                # Custom automation scripts  
-│── 📂 notebooks/              # Jupyter notebooks for experimentation  
-│── 📂 assets/                 # Sample images and resources  
-│── 📄 README.md               # Project documentation  
-│── 📄 LICENSE                 # Licensing details  
-│── 📄 requirements.txt        # List of dependencies
+
+📂 Image-Generation-Stable-Diffusion-Comfy-UI/  
+│── 📂 assets/                    # Contains images and example prompts for reference  
+│── 📄 README.md                   # Main documentation with project overview, usage, and setup instructions  
+│── 📄 system_architecture.md       # Detailed explanation of the system architecture and workflow  
+│── 📄 implementation_execution.md  # Step-by-step guide for implementation and execution  
+│── 📄 LICENSE                      # Licensing information for the project
+
+
 
 ---
+# Overview
+![Screenshot 2025-02-12 203419](https://github.com/user-attachments/assets/43fff966-d312-40dc-88c5-19d9c522c50f)
+
 # License
 
 This project is licensed under the MIT License.
